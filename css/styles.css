@@ -328,7 +328,11 @@ nav {
 }
 
 .filter-list {
-
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 580px;
+    padding-bottom: 50px;
 }
 
 .filter-item {
@@ -342,6 +346,7 @@ nav {
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    padding: 0px 20px;
 }
 
 .filter-btn:is(:hover, :focus) {
@@ -356,16 +361,31 @@ nav {
 
 }
 
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
 .project-item {
 
 }
 
 .project-photo {
-    border: 1px solid #EEEEEE;
+
+}
+
+.project-photo > img {
+    vertical-align: middle;
 }
 
 .project-description {
-
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    padding: 20px 24px;
 }
 
 .project-description-header {
@@ -379,4 +399,5 @@ nav {
     letter-spacing: 0.03em;
     line-height: 1.9;
     color: var(--brand-color-grey);
+    padding-top: 4px;;
 }
