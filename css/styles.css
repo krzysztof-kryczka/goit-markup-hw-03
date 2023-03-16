@@ -20,7 +20,10 @@ body {
 }
 
 /* *************** repetitive pieces of code *************** */
-
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .btn {
     font-family: 'Roboto', sans-serif;
     border: none;
