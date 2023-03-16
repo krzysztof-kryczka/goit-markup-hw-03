@@ -14,16 +14,30 @@
     --brand-background-white: var(--brand-color-white);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--brand-color-black);
 }
 
 /* *************** repetitive pieces of code *************** */
-.section{
+
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .btn {
     font-family: 'Roboto', sans-serif;
     border: none;
@@ -40,29 +54,45 @@ body {
 
 /* *************** COMMON *************** */
 
-.header {
+ul {
+    list-style-type: none;
+}
+
+header {
     border-bottom: 1px solid #ECECEC;
-    min-height: 80px;
 }
 
 /* NAVIGATION in header */
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.nav {
-
+nav {
+    display: flex;
 }
 
 .menu-list {
-
+    display: flex;
+    align-items: center;
 }
 
 .menu-item {
+    margin-right: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+}
 
+.menu-item:last-child {
+    margin-right: 0;
 }
 
 .menu-link {
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
     color: var(--brand-color-black);
 }
 .menu-link:is(:hover, :focus, :active) {
@@ -81,14 +111,15 @@ body {
 .contact-list a {
     color: var(--brand-color-grey);
     text-decoration: none;
+    margin-right: 50px;
+}
+
+.contact-list a:last-child{
+    margin-right: 0;
 }
 
 .contact-list a:is(:hover, :focus, :active) {
     color: var(--brand-color-blue);
-}
-
-.contact-item {
-
 }
 
 /* SECTION LOGO */
@@ -101,6 +132,7 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #000;
+    margin-right: 93px;
 }
 
 .logo-trademark-color {
