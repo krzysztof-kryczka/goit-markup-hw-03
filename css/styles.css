@@ -31,10 +31,11 @@ body {
     padding-bottom: 94px;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .btn {
@@ -78,17 +79,13 @@ nav {
 .menu-list {
     display: flex;
     align-items: center;
+    gap: 46px;
 }
 
 .menu-item {
-    margin-right: 46px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-}
-
-.menu-item:last-child {
-    margin-right: 0;
 }
 
 .menu-link {
@@ -145,7 +142,6 @@ nav {
     background-color: var(--brand-background-dark);
     padding-top: 60px;
     padding-bottom: 60px;
-
 }
 
 .footer .logo {
@@ -158,6 +154,7 @@ nav {
     font-style: normal;
     display: flex;
     flex-direction: column;
+    line-height: 1.6;
 }
 
 .footer .address-item {
@@ -199,7 +196,6 @@ nav {
 
 .hero-content {
     text-align: center;
-    width: 700px;
     margin: 0 auto;
 }
 
@@ -208,9 +204,10 @@ nav {
     text-transform: uppercase;
     font-size: 44px;
     font-weight: 900;
-    line-height: 1.4;
+    line-height: 1.3636;
     letter-spacing: 0.06em;
     margin-bottom: 30px;
+    padding: 0 200px;
 }
 
 .hero-btn {
@@ -263,6 +260,7 @@ nav {
 
 .offers {
     text-align: center;
+    margin-top: -94px;
 }
 
 .offer-content {
@@ -331,10 +329,9 @@ nav {
 
 .filter-list {
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 580px;
-    padding-bottom: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 10px;
 }
 
 .filter-item {
@@ -366,9 +363,8 @@ nav {
 .project-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 30px;
-    column-gap: 30px;
+    justify-content: center;
+    gap: 30px;
 }
 
 .project-item {
